@@ -18,7 +18,7 @@ img {
     height: auto;
 }
 
-.flex-contanier{
+.contanier{
     display: flex;
     padding: 35px;
     gap: 80px;
@@ -53,7 +53,7 @@ button{
     margin-top: 80px;
 }
 
-.mb-16{
+.mb{
     margin-bottom: 16px;
 }
 
@@ -117,8 +117,6 @@ textarea:focus-visible{
 .iconosvg {
     right: 0%;
     bottom: 0%;
-
-    
 }
 
 .textresticciones {
@@ -297,7 +295,7 @@ textarea:focus-visible{
 }
 
 @media only screen and (max-width: 1200px) {
-    .flex-contanier {
+    .contanier {
         padding: 25px;
     }
 
@@ -319,7 +317,7 @@ textarea:focus-visible{
         margin-left: 25px;
     }
 
-    .flex-contanier{
+    .contanier{
         gap: 35px;
     }
 
@@ -337,7 +335,7 @@ textarea:focus-visible{
 }
 
 @media only screen and (max-width: 800px) {
-    .flex-contanier{
+    .contanier{
         padding: 20px;
         flex-direction: column;
     }
