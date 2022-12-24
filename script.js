@@ -30,7 +30,7 @@ function encriptarTexto() {
 
         const resultado = nuevasPalabras.join(' ');
 
-        inputResultado.innerHTML = "<p class='msjencriptado' id ='msjencriptado'></p><button type='button' class='desencriptar' id='btn-copiar'><p>copiar</p></button>"
+        inputResultado.innerHTML = "<p class='msjencriptado t-justify' id ='msjencriptado'></p><button type='button' class='desencriptar' id='btn-copiar'><p>copiar</p></button>"
 
         let mensajeEncriptado = document.getElementById('msjencriptado');
         const btnCopiar = document.getElementById('btn-copiar');
@@ -61,7 +61,7 @@ function desencriptarTexto() {
 
         const resultado = nuevasPalabras.join(' ');
 
-        inputResultado.innerHTML = "<p class='msjencriptado' id ='msjencriptado'></p><button type='button' class='desencriptar' id='btn-copiar'><p>copiar</p></button>"
+        inputResultado.innerHTML = "<p class='msjencriptado t-justify' id ='msjencriptado'></p><button type='button' class='desencriptar' id='btn-copiar'><p>copiar</p></button>"
 
         let mensajeEncriptado = document.getElementById('msjencriptado');
         const btnCopiar = document.getElementById('btn-copiar');
