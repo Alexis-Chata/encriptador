@@ -170,6 +170,7 @@ textarea:focus-visible {
     margin: auto;
     gap: 32px;
     display: inline-grid;
+    width: 100%;
 }
 
 
@@ -183,7 +184,7 @@ textarea:focus-visible {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    text-align: center;
+    text-align: justify;
     color: #343A40;
     flex: none;
     order: 0;
@@ -219,4 +220,30 @@ textarea:focus-visible {
 .error {
     color: red;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 760px) {
+
+    .logo {
+        padding-top: 70px;
+    }
+
+    .restricciones, .logo{
+        padding-left: 40px;
+    }
+
+    .texto{
+        margin-left: 40px;
+    }
+
+    .cajabtn{
+        display: flex;
+        gap: 24px;
+        padding: 12px 40px;
+    }
+
+    .cifrado{
+        width: calc(100% - 80px);
+    }
+
 }
