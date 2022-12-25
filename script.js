@@ -4,7 +4,7 @@ const btnEncriptar = document.getElementById('btn-encriptar');
 const btnDesencriptar = document.getElementById('btn-desencriptar');
 let inputResultado = document.getElementById('msjs');
 
-const soloLetras = '^[a-z !ñ,.]+$';
+const soloLetras = '^[a-z !ñ,.\n]+$';
 
 btnEncriptar.addEventListener('click', encriptarTexto);
 btnDesencriptar.addEventListener('click', desencriptarTexto);
@@ -29,6 +29,12 @@ function encriptarTexto() {
         }
 
         const resultado = nuevasPalabras.join(' ');
+
+        let imgcifrado = document.getElementById('imgcifrado');
+        imgcifrado.classList.remove('d-flex');
+
+        let contenedor = document.getElementById('contenedor');
+        contenedor.classList.add('h-contenedor');
 
         inputResultado.innerHTML = "<p class='msjencriptado t-justify' id ='msjencriptado'></p><button type='button' class='desencriptar' id='btn-copiar'><p>copiar</p></button>"
 

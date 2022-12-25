@@ -10,20 +10,11 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* display: flex; */
     background: #F3F5FC;
 }
 
 .contanier {
-    /* display: flex; */
     padding-bottom: 25px;
-    /* gap: 80px; */
-    /* justify-content: space-between; */
-    /* width: 95%; */
-}
-
-.d-flex {
-    display: flex;
 }
 
 .mb {
@@ -50,7 +41,7 @@ body {
     color: #0A3871;
     letter-spacing: 0em;
     text-align: left;
-    width: calc(100% - 40px);
+    width: calc(100% - 44px);
 }
 
 textarea {
@@ -103,11 +94,10 @@ textarea:focus-visible {
     height: 18px;
 }
 
-
 .cifradoimg {
     display: flex;
     align-self: center;
-    width: 336px;
+    width: 90%;
     height: 304px;
     margin: auto;
     display: none;
@@ -157,13 +147,10 @@ textarea:focus-visible {
     margin-top: 64px;
     width: calc(100% - 50px);
     margin: 0 auto;
-    /* min-width: 400px; */
-    /* min-height: 186px; */
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
     border-radius: 32px;
     display: flex;
-    /* min-height: 510px; */
 }
 
 .contenedor {
@@ -220,13 +207,12 @@ textarea:focus-visible {
     font-size: 18px;
 }
 
-
-.t-center{
+.t-center {
     text-align: center;
     justify-self: center;
 }
 
-.t-justify{
+.t-justify {
     text-align: justify;
 }
 
@@ -235,28 +221,106 @@ textarea:focus-visible {
     font-weight: bold;
 }
 
+.d-none {
+    display: none;
+}
+
 @media only screen and (min-width: 760px) {
 
     .logo {
         padding-top: 70px;
     }
 
-    .restricciones, .logo{
+    .restricciones, .logo {
         padding-left: 40px;
     }
 
-    .texto{
+    .texto {
         margin-left: 40px;
     }
 
-    .cajabtn{
+    .cajabtn {
         display: flex;
         gap: 24px;
         padding: 12px 40px;
     }
 
-    .cifrado{
+    .cifrado {
         width: calc(100% - 80px);
     }
 
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .contanier {
+        display: grid;
+        grid-template-columns: auto 35%;
+        padding: 35px;
+        height: calc(100% - 70px);
+    }
+
+    .caja1 {
+        display: grid;
+        grid-template-rows: 120px auto 150px;
+    }
+
+    #botones {
+        align-self: end;
+    }
+
+    .texto {
+        height: calc(100% - 60px);
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .h-contenedor {
+        height: calc(100% - 30px);
+    }
+
+    .msjs {
+        align-content: space-between;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
+    /* display: none; */
+    /* Ocultar scroll */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+::-webkit-scrollbar-thumb {
+    background: #737373;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #919191;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
 }
